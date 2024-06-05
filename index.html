@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>protfolio</title>
+    <meta name="keyword" content="description"/>
+    <title> protfolio</title>
+    <style>
+      body{
+background-color: rgb(119, 221, 224);
+      }
+    </style>
   </head>
-  <body>
- 
-
+  <body >
     <header>
         <nav>
             <ol type="i">
@@ -25,13 +29,12 @@
   <a target="blank" href="https://www.linkedin.com/in/samanta-mostafiz-a89b072ba/">
     <img src="image/ri.jpg" alt="riya" height="350"width="350">
   </a>
-      <style>
-        img
-      </style>
+      
 
     </header>
     <!---->
     <main>
+  <!--  /* home section */-->
       <section id="home">
         <h2>About me</h2>
         <p>
@@ -42,7 +45,24 @@
           <strong>Activities:</strong>
           National level winner for art and painting
         </p>
+
+          <table border="1" text-align="center" cellspacing="0">
+            <h2>Address</h2>
+ <tr >
+  <th>present address</th>
+  <td rowspan="2">brahmonbaria</td>
+ </tr>
+ <tr>
+  <th>maritial address</th>
+ </tr>
+ <tr>
+  <th>permanant address</th>
+  <td>Chuadanga</td>
+ </tr>
+          </table>
+        
       </section>
+ <!--     /* education section */-->
       <section id="education">
         <h1>Education</h1>
         <table border="1" cellpadding="10" cellspacing="0" text-align="center"> 
@@ -68,8 +88,10 @@
         </table>
               </section>
 
+            <!--  /* skilss */-->
       <section id="skill">
-        <h2>Skills</h2>
+        <div>
+          <h2>Skills</h2>
         <ol>
           <li>HTML</li>
           <li>CSS</li>
@@ -81,46 +103,123 @@
           <li>Bootstrap</li>
           <li>TypeScript</li>
         </ol>
+        </div>
+        <div>
+          <h3>progress skill</h3>
+        <div>  
+          <label for="html">HTML:</label>
+          <progress id="html" value="90" max="100">good</progress>
+        </div>
+          <div>
+          <label for="css">CSS:</label>
+          <progress id="css" value="80" max="100">good</progress>
+          </div>
+          <div>
+          <label for="js">JS:</label>
+          <progress id="js" value="70" max="100">good</progress>
+          </div>
+          <div>
+          <label for="react">React:</label>
+          <progress id="react" value="50" max="100">good</progress>
+          </div>
+          <div>
+            <h3>experience</h3>
+            <label for="experience">experience:</label>
+            <meter value="3" id="experience" min="1" max="10" ></meter>
+          </div>
+        </div>
       </section>
 
+     <!-- /* project section */-->
       <section id="project">
         <h2>projects</h2>
 <ol>
     <li>
-        <a target="_self" href="https://github.com/Samanta-Mostafiz/pizza-react-app">Pizza delivery app</a>
+        <a target="_self" href="https://github.com/Samanta-Mostafiz/pizza-react-app">pizza app delivery</a>
+        <br>
+        <img src="image/me.jpg" alt="me" width="100"height="100">
     </li>
     <li>    
          <a target="blank" href="https://github.com/Samanta-Mostafiz/travel-react-app">Travel app</a>
     </li>
 </ol>
       </section>
-
+<!--
+/* info */-->
       <section id="info">
-<form action="">
-    <label for="name"><strong>Name:</strong> </label>
+<form action="https://formspree.io/f/myyrqlqw" method="POST">
+      <label for="name"><strong>Name:</strong> </label>
     <input type="text"id="name">
 </br>
 </br>
+
     <label for="mail"><strong>E-mail:</strong></label>
     <input type="mail" id="mail" required>
 </br></br>
+
+
+
+<label for="date">date of birth:</label>
+<input type="date">
+</br></br>
+
+<label for="age">age:</label>
+<input type="number" id="age" min="18" max="32">
+</br></br>
+
+<label for="image">Resume:</label>
+<input type="file" accept="image/*">
+</br></br>
+
+<label for="website">website:</label>
+<input type="url" id="website" pattern="https?://.+">
+</br></br>
+
+<label for="subject">Subject</label>
+<select name="subject" id="subject">
+  <option value="query">Query</option>
+  <option value="support">Support</option>
+  <option value="job seeking">seeking job</option>
+</select>
+<br><br>
+
 <label for="message">Message:</label>
 <textarea name="message" id="message" rows="10" cols="20"></textarea>
 </br></br>
+
 <button>submit</button>
 <button>reset</button>
 </form>
+<br><br><hr>
+      </section>
+      <section>
+        <h3><i>multimedia properties</i></h3>
+        <video src="./assets/biriyani.mp4" type="video.mp4" width="400" controls>your browser dont support it</video>
       </section>
     </main>
     <!---->
 
     <footer>
     <br><hr>
+    <section id="follow">
+          <a href="https://www.facebook.com/profile.php?id=61559910547656">📘facebook</a>
+          </section>
         <section id="contact">
             <a href="tel:80986785563">call</a>
             <a href="mail:hgjhgd@gmail.com">mail</a>
+            <hr>
+            <h3>direction</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116643.7083235432!2d91.02064747893567!3d23.991684578977402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375405bd30bb4f23%3A0x1b3b2e1fce26f623!2sBrahmanbaria!5e0!3m2!1sen!2sbd!4v1717617201101!5m2!1sen!2sbd" 
+            title="home"
+            width="350" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+             referrerpolicy="no-referrer-when-downgrade"></iframe>
           <p>all reserved by samanta ©️</p>
         </section>
+       
     </footer>
   </body>
 </html>
